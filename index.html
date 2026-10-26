@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KIRIGAN - Proteção Forjada para Grandes Batalhas</title>
+  <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+
+  <!-- Header / Nav -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <!-- Substitua pela imagem do seu logo se preferir: <img src="assets/images/logo.png" alt="KIRIGAN"> -->
+        <h1>KIRIGAN</h1>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="assets/images/hero-bg.jpg" alt="Fundo Hero Kirigan">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="sub-brand">KIRIGAN</span>
+      <h2>PROTEÇÃO FORJADA<br>PARA GRANDES BATALHAS</h2>
+    </div>
+  </section>
+
+  <!-- Feature Section (Sobre o Produto) -->
+  <section class="about-section">
+    <div class="container about-grid">
+      <div class="about-text">
+        <h2>Para quem não aceita<br>ser derrotado pelo<br>desgaste</h2>
+        <p>
+          Cada carta do seu deck carrega valor, estratégia e história. Nossos protetores não foram criados apenas para cobrir o papel, mas para erguer uma armadura de alta densidade capaz de resistir ao uso mais intenso do jogo competitivo.
+        </p>
+        
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3>250 µm</h3>
+            <p>Espessura</p>
+          </div>
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>Opacidade</p>
+          </div>
+          <div class="stat-item">
+            <h3>0%</h3>
+            <p>PVC & Acid Free</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-gallery">
+        <div class="main-image-box">
+          <img id="mainDisplayImage" src="assets/images/camadas-detalhe-1.jpg" alt="Tecnologia de Coextrusão de Três Camadas">
+        </div>
+        <div class="thumbs-grid">
+          <img src="assets/images/camadas-detalhe-1.jpg" class="thumb active" onclick="changeImage(this.src)" alt="Miniatura 1">
+          <img src="assets/images/camadas-detalhe-2.jpg" class="thumb" onclick="changeImage(this.src)" alt="Miniatura 2">
+          <img src="assets/images/camadas-detalhe-3.jpg" class="thumb" onclick="changeImage(this.src)" alt="Miniatura 3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>TECNOLOGIA EM CADA CAMADA</h2>
+        <hr class="red-line">
+        <p>Conheça os protetores de alta densidade projetados para preservar o valor e a integridade do seu acervo.</p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-img">
+            <img src="assets/images/product-dual-matte.jpg" alt="Dual Matte Sleeves">
+          </div>
+          <h3>Dual Matte Sleeves</h3>
+          <p>Controle absoluto do baralho, opacidade total e corte preciso a cada shuffle.</p>
+          <a href="#" class="btn-secondary">Ver detalhes</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-img">
+            <img src="assets/images/product-perfect-fit.jpg" alt="Perfect Fit">
+          </div>
+          <h3>Perfect Fit</h3>
+          <p>Camada interna cirúrgica que protege cada carta como uma armadura oculta.</p>
+          <a href="#" class="btn-secondary">Ver detalhes</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-img">
+            <img src="assets/images/product-outer-sleeves.jpg" alt="Outer Sleeves">
+          </div>
+          <h3>Outer Sleeves</h3>
+          <p>Escudo externo reforçado para enfrentar meses, torneios e batalhas infinitas.</p>
+          <a href="#" class="btn-secondary">Ver detalhes</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Store Locator -->
+  <section class="cta-banner red-banner">
+    <div class="container">
+      <h2>Encontre Kirigan perto de você</h2>
+      <p>Sua coleção merece proteção de elite. Nossos produtos estão disponíveis nas melhores LGS e e-commerces parceiros do Brasil. Encontre o revendedor oficial mais próximo.</p>
+      <a href="#" class="btn-main">VER LOJAS PARCEIRAS</a>
+    </div>
+  </section>
+
+  <!-- CTA B2B (Revendedor) -->
+  <section class="cta-banner dark-banner">
+    <div class="container">
+      <h2>QUER TER NOSSOS PRODUTOS NA SUA LOJA?</h2>
+      <p class="highlight-red">Torne-se um revendedor oficial</p>
+      <p class="brand-sub">KIRIGAN</p>
+      <a href="#" class="btn-main font-bold">SEJA UM REVENDEDOR</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Local</h4>
+        <p>Contagem - MG, 32015-530, Brasil</p>
+        <p>Rua Vereador Dico Diniz, 400 - Linda Vista</p>
+        <p>email@marqui.com</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Cadastre-se</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Políticas</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Termos e Condições</a></li>
+          <li><a href="#">Política de Reembolso</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Política de Envio</a></li>
+          <li><a href="#">Declaração de Acessibilidade</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Redes sociais</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="TikTok">TikTok</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 por Kirigan Acessórios. Criado com Wix Studio / Custom Design.</p>
+    </div>
+  </footer>
+
+  <script src="src/script/script.js"></script>
+</body>
+</html>
