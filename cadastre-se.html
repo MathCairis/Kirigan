@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KIRIGAN - Portal Exclusivo para Lojistas</title>
+  <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+
+  <!-- Header / Nav -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html" style="text-decoration: none;"><h1>KIRIGAN</h1></a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Side Menu (Menu Lateral) -->
+  <div class="side-menu-overlay" id="sideMenuOverlay"></div>
+  <aside class="side-menu" id="sideMenu">
+    <button class="menu-close" id="menuClose" aria-label="Fechar Menu">&times;</button>
+    <nav class="side-nav">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="cadastre-se.html">Cadastre-se</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Registration Section (Portal para Lojistas) -->
+  <main class="register-section">
+    <div class="container">
+      <div class="register-header">
+        <h2>Portal exclusivo para Lojistas</h2>
+        <div class="red-line"></div>
+        <p>Cadastre os dados da sua empresa para se tornar um revendedor oficial Kirigan</p>
+      </div>
+
+      <div class="form-wrapper">
+        <form class="register-form" id="registerForm" novalidate>
+          
+          <div class="form-group full-width">
+            <label for="razaoSocial">Razão Social</label>
+            <input type="text" id="razaoSocial" placeholder="Digite a Razão Social da empresa" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cnpj">CNPJ</label>
+              <input type="text" id="cnpj" maxlength="18" placeholder="00.000.000/0000-00" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" placeholder="seu@email.com" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="responsavel">Nome do Responsável</label>
+              <input type="text" id="responsavel" placeholder="Nome completo do responsável" required>
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" maxlength="15" placeholder="(00) 00000-0000" required>
+            </div>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn-submit">Enviar</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Local</h4>
+        <p>Contagem - MG, 32041-620, Brasil</p>
+        <p>Rua Vereador Dias Diniz, 485 - Linda Vista</p>
+        <p>info@meusite.com</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="cadastre-se.html">Cadastre-se</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Políticas</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Termos e Condições</a></li>
+          <li><a href="#">Política de Reembolso</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Política de Envio</a></li>
+          <li><a href="#">Declaração de acessibilidade</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Redes sociais</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="TikTok">TikTok</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 por Kirigan Acessórios. Criado com Wix Studio™.</p>
+    </div>
+  </footer>
+
+  <script src="src/script/script.js"></script>
+</body>
+</html>
